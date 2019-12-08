@@ -12,11 +12,7 @@ def load_library(path)
      emoticons["get_emoticon"][eng] = jan
   end
   emoticons
-en
-def load_library(file_path)
-  file = File.read(file_path)
-  emoticons = YAML.load(file)
-end
+end 
 
 def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
